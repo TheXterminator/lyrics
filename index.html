@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $.get("old", function(data, status){
+      console.log(data);
+      console.log(status);
+    });
+});
+</script>
+</head>
 <body>
 
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
+<button>Send an HTTP GET request to a page and get the result back</button>
 
 </body>
 </html>
